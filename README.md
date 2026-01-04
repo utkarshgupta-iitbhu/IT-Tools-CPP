@@ -6,7 +6,6 @@
 ![Language](https://img.shields.io/badge/Language-C++-00599C?style=for-the-badge&logo=cplusplus)
 ![Platform](https://img.shields.io/badge/Platform-Windows-0078D6?style=for-the-badge&logo=windows)
 ![Status](https://img.shields.io/badge/Status-Active-success?style=for-the-badge)
-![License](https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge)
 
 <br>
 
@@ -69,20 +68,7 @@ Generate **cryptographically-informed** random tokens with fully customizable ch
 
 # 🔐 Password Strength Analyzer
 
-<div align="center">
-
-```
-╔══════════════════════════════════════════════════════════════╗
-║                                                              ║
-║           🔐 PASSWORD STRENGTH ANALYZER 🔐                   ║
-║                                                              ║
-║     Real-time password security evaluation at your          ║
-║              fingertips — type and see!                      ║
-║                                                              ║
-╚══════════════════════════════════════════════════════════════╝
-```
-
-</div>
+Real-time password security evaluation at your fingertips — type and see!
 
 <br>
 
@@ -180,16 +166,13 @@ Score:   50 / 100
 
 The analyzer determines available characters based on what you've used:
 
-```
-┌─────────────────┬───────────┬─────────────────────────────┐
-│ Character Type  │ Pool Size │ Characters                  │
-├─────────────────┼───────────┼─────────────────────────────┤
-│ Lowercase       │    26     │ abcdefghijklmnopqrstuvwxyz  │
-│ Uppercase       │    26     │ ABCDEFGHIJKLMNOPQRSTUVWXYZ  │
-│ Digits          │    10     │ 0123456789                  │
-│ Symbols         │    32     │ !@#$%^&*()_+-=[]{}|;':",.<>?│
-└─────────────────┴───────────┴─────────────────────────────┘
-```
+| Character Type | Pool Size | Characters                          |
+|----------------|-----------|-------------------------------------|
+| Lowercase      | 26        | abcdefghijklmnopqrstuvwxyz          |
+| Uppercase      | 26        | ABCDEFGHIJKLMNOPQRSTUVWXYZ          |
+| Digits         | 10        | 0123456789                          |
+| Symbols        | 32        | !@#$%^&*()_+-=[]{}|;':",.<>?        |
+
 
 ### Step 2: Calculate Raw Entropy
 
@@ -204,14 +187,11 @@ The analyzer determines available characters based on what you've used:
 
 ### Step 3: Apply Penalties
 
-```
-┌──────────────────────────────┬─────────────┐
-│ Bad Pattern Detected         │ Penalty     │
-├──────────────────────────────┼─────────────┤
-│ 🔄 3+ Repeated characters    │  -15 bits   │
-│ 📝 Common sequences found    │  -25 bits   │
-└──────────────────────────────┴─────────────┘
-```
+| Bad Pattern Detected          | Penalty    |
+|------------------------------|------------|
+| 🔄 3+ repeated characters    | -15 bits   |
+| 📝 Common sequences found    | -25 bits   |
+
 
 ### Step 4: Calculate Final Score
 
@@ -292,20 +272,7 @@ public:
 
 # 🎲 Token Generator
 
-<div align="center">
-
-```
-╔══════════════════════════════════════════════════════════════╗
-║                                                              ║
-║              🎲 TOKEN GENERATOR 🎲                           ║
-║                                                              ║
-║       Generate secure random tokens instantly with           ║
-║              fully customizable options!                     ║
-║                                                              ║
-╚══════════════════════════════════════════════════════════════╝
-```
-
-</div>
+Generate secure random tokens instantly with fully customizable options!
 
 <br>
 
@@ -489,20 +456,6 @@ public:
 
 <br>
 
-## 📊 Token Strength by Configuration
-
-| Configuration | Pool Size | Entropy/Char | 16-char Entropy |
-|:--------------|:---------:|:------------:|:---------------:|
-| Lower only | 26 | 4.7 bits | 75 bits |
-| Lower + Upper | 52 | 5.7 bits | 91 bits |
-| Lower + Upper + Numbers | 62 | 5.95 bits | 95 bits |
-| All characters | 69 | 6.1 bits | 98 bits |
-| All (no ambiguous) | 64 | 6.0 bits | 96 bits |
-
----
-
-<br>
-
 # 📦 Installation
 
 ## Prerequisites
@@ -619,9 +572,3 @@ IT-Tools/
 ---
 
 <br>
-<br>
-
----
-*Happy coding! 🚀*
-
-</div>
